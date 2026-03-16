@@ -49,7 +49,16 @@
 &trans  &kp Q           &kp W           &kp E               &kp R             &kp T        &kp Y      &kp U              &kp I                &kp O            &kp P               &trans
 &trans  &ht LEFT_GUI A  &ht LEFT_ALT S  &ht LEFT_CONTROL D  &ht LEFT_SHIFT F  &kp G        &kp H      &ht RSHIFT J       &ht RIGHT_CONTROL K  &ht RIGHT_ALT L  &ht RIGHT_GUI SEMI  &trans
 &trans  &kp Z           &kp X           &kp C               &kp V             &kp B        &kp N      &kp M              &kp COMMA            &kp DOT          &kp FSLH            &trans
-                                        &htmo 3 ESC         &htmo 1 TAB       &kp ENTER    &kp SPACE  &htmo 2 BACKSPACE  &htmo 4 DELETE
+                                        &htmo 4 ESC         &htmo 2 TAB       &kp ENTER    &kp SPACE  &htmo 3 BACKSPACE  &htmo 5 DELETE
+            >;
+        };
+
+        pc_layer {
+            bindings = <
+&trans  &kp Q        &kp W           &kp E           &kp R             &kp T        &kp Y      &kp U              &kp I            &kp O            &kp P           &trans
+&trans  &ht LCTRL A  &ht LEFT_ALT S  &ht LEFT_GUI D  &ht LEFT_SHIFT F  &kp G        &kp H      &ht RSHIFT J       &ht RIGHT_GUI K  &ht RIGHT_ALT L  &ht RCTRL SEMI  &trans
+&trans  &kp Z        &kp X           &kp C           &kp V             &kp B        &kp N      &kp M              &kp COMMA        &kp DOT          &kp FSLH        &trans
+                                     &htmo 4 ESC     &htmo 2 TAB       &kp ENTER    &kp SPACE  &htmo 3 BACKSPACE  &htmo 5 DELETE
             >;
         };
 
@@ -85,8 +94,8 @@
 
         bt {
             bindings = <
-&trans  &out OUT_TOG  &trans        &trans        &trans        &out OUT_USB    &out OUT_BLE  &trans      &trans  &trans  &tog 5  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans        &trans      &trans  &trans  &trans  &trans
+&trans  &out OUT_TOG  &trans        &trans        &trans        &out OUT_USB    &out OUT_BLE  &trans      &trans  &trans  &tog 1  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans        &trans      &trans  &trans  &tog 0  &trans
 &trans  &trans        &trans        &trans        &trans        &trans          &trans        &trans      &trans  &trans  &trans  &trans
                                     &trans        &trans        &trans          &trans        &bt BT_CLR  &trans
             >;
@@ -98,15 +107,6 @@
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans       &kp LEFT  &kp DOWN       &kp UP      &kp RIGHT  &kp RIGHT_GUI  &trans
 &trans  &trans        &trans        &trans            &kp F11         &kp F12      &kp F12   &kp F11        &trans      &trans     &trans         &trans
                                     &kp ESC           &kp TAB         &kp SPACE    &kp RET   &kp BACKSPACE  &kp DELETE
-            >;
-        };
-
-        pc_layer {
-            bindings = <
-&trans  &kp Q        &kp W           &kp E           &kp R             &kp T        &kp Y      &kp U              &kp I            &kp O            &kp P           &trans
-&trans  &ht LCTRL A  &ht LEFT_ALT S  &ht LEFT_GUI D  &ht LEFT_SHIFT F  &kp G        &kp H      &ht RSHIFT J       &ht RIGHT_GUI K  &ht RIGHT_ALT L  &ht RCTRL SEMI  &trans
-&trans  &kp Z        &kp X           &kp C           &kp V             &kp B        &kp N      &kp M              &kp COMMA        &kp DOT          &kp FSLH        &trans
-                                     &htmo 3 ESC     &htmo 1 TAB       &kp ENTER    &kp SPACE  &htmo 2 BACKSPACE  &htmo 4 DELETE
             >;
         };
     };
