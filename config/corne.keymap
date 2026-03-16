@@ -62,7 +62,7 @@
             >;
         };
 
-        num-ctrl {
+        num {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -70,10 +70,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &kp N1        &kp N2        &kp N3            &kp N4          &kp N5       &kp N6    &kp N7         &kp N8      &kp N9     &kp N0         &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans       &kp LEFT  &kp DOWN       &kp UP      &kp RIGHT  &kp RIGHT_GUI  &trans
-&trans  &trans        &trans        &trans            &trans          &trans       &trans    &trans         &trans      &trans     &trans         &trans
-                                    &kp ESC           &kp TAB         &kp SPACE    &kp RET   &kp BACKSPACE  &kp DELETE
+&trans  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5       &kp N6    &kp N7         &kp N8      &kp N9     &kp N0  &trans
+&trans  &trans  &trans  &trans   &trans   &trans       &kp LEFT  &kp DOWN       &kp UP      &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans   &trans   &trans       &trans    &trans         &trans      &trans     &trans  &trans
+                        &kp ESC  &kp TAB  &kp SPACE    &kp RET   &kp BACKSPACE  &kp DELETE
             >;
         };
 
@@ -103,10 +103,10 @@
 
         func {
             bindings = <
-&kp Q   &kp F1        &kp F2        &kp F3            &kp F4          &kp F5       &kp F6    &kp F7         &kp F8      &kp F9     &kp F10        &trans
-&trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans       &kp LEFT  &kp DOWN       &kp UP      &kp RIGHT  &kp RIGHT_GUI  &trans
-&trans  &trans        &trans        &trans            &kp F11         &kp F12      &kp F12   &kp F11        &trans      &trans     &trans         &trans
-                                    &kp ESC           &kp TAB         &kp SPACE    &kp RET   &kp BACKSPACE  &kp DELETE
+&kp Q   &kp F1  &kp F2  &kp F3   &kp F4   &kp F5       &kp F6    &kp F7         &kp F8      &kp F9     &kp F10  &trans
+&trans  &trans  &trans  &trans   &trans   &trans       &kp LEFT  &kp DOWN       &kp UP      &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans   &kp F11  &kp F12      &kp F12   &kp F11        &trans      &trans     &trans   &trans
+                        &kp ESC  &kp TAB  &kp SPACE    &kp RET   &kp BACKSPACE  &kp DELETE
             >;
         };
     };
